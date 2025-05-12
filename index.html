@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>Carta de disculpas</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #fff0f5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+    .carta {
+      background: white;
+      padding: 30px;
+      border-radius: 20px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+      max-width: 500px;
+      text-align: center;
+    }
+    h1 {
+      color: #e91e63;
+    }
+    p {
+      font-size: 18px;
+      margin: 20px 0;
+    }
+    button {
+      background-color: #e91e63;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+    .mensaje-final {
+      display: none;
+      margin-top: 20px;
+      color: #4caf50;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="carta">
+    <h1>Lo siento, mi amor 💔</h1>
+    <p>
+      Sé que te hice sentir mal, y de verdad me pesa. <br> No fue mi intención herirte, hacerte sentir mal. Perdoname mi amor, por haber sido un idiota contigo,
+      no quiero estar sin ti ningun dia de mi vida desde que te conoci, te pido por favor no me dejes. <br> Te amo.💖
+    </p>
+    <p>
+      ¿Me perdonas? 💌
+    </p>
+    <button onclick="mostrarMensaje()">Sí, te perdono 💖</button>
+    <p class="mensaje-final" id="mensajeFinal">¡Gracias, mi amor! Prometo mejorar cada día para ti. 💕</p>
+  </div>
+
+  <script>
+    function mostrarMensaje() {
+      document.getElementById("mensajeFinal").style.display = "block";
+    }
+  </script>
+</body>
+</html>
